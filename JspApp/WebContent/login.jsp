@@ -18,13 +18,14 @@
 				</tr>
 			</thead>
 			<tr> 
-			<td>Enter Username</td> <td> <input type="text" name = "userName" style="width: 196px; "></td>
+			<td>Enter Username: </td> <td> <input type="text" name = "userName" style="width: 196px; "></td>
 		</tr>
 		<tr> 
-			<td>Enter Password</td> <td> <input type="password" name = "password" style="width: 195px; "></td>
+			<td>Enter Password: </td> <td> <input type="password" name = "password" style="width: 195px; "></td>
 		</tr>
 		<tr> 
-			<td colspan="2" align="center"><input type="submit" value = "Submit" style="width: 226px; background-color: Olive; color: White"></td>
+			<td align="center"><input type="submit" value = "Submit" style="width: 226px; background-color: Olive; color: White"></td>
+			<td><a href=signup.jsp>Not a User? Click Here</a></td>
 		</tr>
 		</table>
 		</center>

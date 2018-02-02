@@ -55,4 +55,26 @@ public class UserDao {
 		
 		return user;
 	}
+	
+	public boolean insertUser(User u){
+		
+		boolean saved = false;
+		Connection con = getConnection();
+		
+		try{
+			PreparedStatement pst = con.prepareStatement("INSERT INTO Users(username, password) VALUES(?,?)");
+			pst.setString(1, u.getUserName());
+			pst.setString(2, u.getPassword());
+			int count = pst.executeUpdate();
+			
+			if(count==1){
+				saved = true;
+			}
+			
+			
+		}catch(SQLException e){
+			e.printStackTrace();
+		}
+		return saved;
+	}
 }
