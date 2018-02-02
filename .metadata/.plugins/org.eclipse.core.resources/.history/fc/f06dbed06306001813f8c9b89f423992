@@ -1,0 +1,17 @@
+package io;
+
+import java.io.FileInputStream;
+
+
+public class FileStreamsDemo {
+
+	public static void main(String[] args) throws Exception {
+		
+		FileInputStream fis  = new FileInputStream("file.txt");
+		int data = 0;
+		while((data = fis.read()) != -1){
+			System.out.println((char)data);
+		}
+	}
+
+}

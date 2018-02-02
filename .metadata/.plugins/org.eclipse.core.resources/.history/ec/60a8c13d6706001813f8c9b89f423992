@@ -1,0 +1,25 @@
+package io;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+
+public class FileStreamsDemo2 {
+
+	public static void main(String[] args) throws Exception {
+		
+		FileReader fis  = new FileReader("D:\\workspace\\Day3\\src\\io\\file.txt");
+		FileWriter fos = new FileWriter("D:\\workspace\\Day3\\src\\io\\file_copy.txt");
+		int data = 0;
+		while((data = fis.read()) != -1){
+			System.out.println(data+"--->"+(char)data);
+			fos.write(data);
+		}
+		
+		fis.close();
+		fos.close();
+	}
+
+}

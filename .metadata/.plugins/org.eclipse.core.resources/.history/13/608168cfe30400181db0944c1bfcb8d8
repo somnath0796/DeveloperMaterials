@@ -1,0 +1,10 @@
+package inheritance;
+
+public class PersonMain {
+	
+	public static void main(String[] args) {
+		
+		Emp e  = new Emp(100, "Somnath",56000);
+		System.out.println(e.showDetails());
+	}
+}

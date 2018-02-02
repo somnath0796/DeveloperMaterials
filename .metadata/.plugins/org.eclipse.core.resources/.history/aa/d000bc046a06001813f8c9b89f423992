@@ -1,0 +1,5 @@
+If data as objects has to be transfered from one heap to another heap over a network(Distributed Computing).
+They cannot be read as Objects. Hence has to be changed to Stream data.
+Hence it is called Serialized. Hence we use RMI(Remote Method Invocation) to make it work.
+We use Marker Interfaces to implements such objects where there state to be captured at runtime. 
+They are made to be Serializable. Hence class must implement Serializable Interface.

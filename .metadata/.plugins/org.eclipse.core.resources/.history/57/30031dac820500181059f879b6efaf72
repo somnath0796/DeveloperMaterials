@@ -1,0 +1,18 @@
+package interfaces;
+
+import com.demo.oracle.OracleDB;
+
+public class Main2 {
+	public static void main(String args[]){
+		
+		DBConnection conn = new OracleDB(){
+			@Override
+			public String getConnectionStatus() {
+				// TODO Auto-generated method stub
+				return "MySQL Connected";
+			}
+		};
+		
+		System.out.println(conn.getConnectionStatus() + " " + conn.getDBDetails());
+	}
+}

@@ -1,0 +1,22 @@
+import com.demo.day1.Box;
+
+public class Demo {
+	public static void main(String[] args) {
+		
+		
+		Box b1 = new Box();
+		System.out.println(b1.getVolume());
+		
+		b1.setLength(25);
+		b1.setBreadth(2);
+		b1.setHeight(3);
+		
+		System.out.println(b1.getVolume());
+		System.out.println(new Box(12,2,3).getVolume());
+		
+		Box b2 = new Box(12, 12, 13, "Cyan");		
+		
+		Box b3 = new Box(5);
+		System.out.println(b3.getVolume());
+	}
+}

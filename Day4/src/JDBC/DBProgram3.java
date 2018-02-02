@@ -1,0 +1,42 @@
+package JDBC;
+
+import java.sql.*;
+import javax.sql.*;
+
+public class DBProgram3 {
+	
+	public static void main(String[] args) {
+		Connection con = null;
+		PreparedStatement stmt = null;
+		ResultSet rs = null;
+		
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","root");
+			
+			System.out.println("Database is now Connected...");
+			
+			stmt = con.prepareStatement("INSERT INTO myemp(empno, name, address, salary, dno) VALUES(?,?,?,?,?)");
+			stmt.setInt(1, 115);
+			stmt.setString(2, "SadhuSANT");
+			stmt.setString(3, "Haridwar");
+			stmt.setDouble(4, 200010);
+			stmt.setInt(5, 30);
+
+			int row = stmt.executeUpdate();
+			System.out.println(row +" rows updated! ");
+			
+		}catch(ClassNotFoundException e){
+			System.out.println("Driver Class not Found.");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
+}

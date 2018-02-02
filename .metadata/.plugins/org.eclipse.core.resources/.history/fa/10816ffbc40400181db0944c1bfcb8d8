@@ -1,0 +1,66 @@
+package com.demo.day1;
+
+public class Box {
+	private int length;
+	private int breadth;
+	private int height;
+	private String color;
+	
+	
+	//constructors
+	
+	public Box(){ }
+	
+	Box(int length, int breadth, int height){
+		this.length = length;
+		this.breadth = breadth;
+		this.height = height;
+	}
+	
+	public Box(int size){
+		this(size,size,size);
+	}
+	
+	public Box(int length, int breadth, int height, String color){
+		this(length,breadth,height);
+		this.color = color;
+	}
+	
+	//getters and setters
+	public int getLength() {
+		return length;
+	}
+	
+	public int getBreadth() {
+		return breadth;
+	}
+	
+	public int getHeight() {
+		return height;
+	}
+	
+	public String getColor() {
+		return color;
+	}
+	
+	public void setLength(int length) {
+		this.length = length;
+	}
+	
+	public void setBreadth(int breadth) {
+		this.breadth = breadth;
+	}
+	
+	public void setHeight(int height) {
+		this.height = height;
+	}
+	
+	public int getVolume(){
+		return length * breadth * height;
+	}
+	
+	public void setColor(String color) {
+		this.color = color;
+	}
+}
+

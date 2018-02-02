@@ -1,0 +1,7 @@
+package inheritance;
+
+public class C extends C{
+	public C() {
+		System.out.println("A's constructor");
+	}
+}

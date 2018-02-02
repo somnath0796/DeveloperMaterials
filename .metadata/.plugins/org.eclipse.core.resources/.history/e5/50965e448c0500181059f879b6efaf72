@@ -1,0 +1,25 @@
+package interfaces;
+
+public class Main2 {
+	
+	public static void main(String args[]){
+		
+		DBConnection conn0 = new DBConnection(){
+			@Override
+			public String getConnectionStatus() {
+				// TODO Auto-generated method stub
+				return "MySQL Connected";
+			}
+
+			@Override
+			public String getDBDetails() {
+				// TODO Auto-generated method stub
+				return "MySQL Server";
+			}
+		};
+		
+		DBConnection conn = DBManager.getDB("mysql");
+		
+		System.out.println(conn.getConnectionStatus() + " version: " + conn.getDBDetails());
+	}
+}

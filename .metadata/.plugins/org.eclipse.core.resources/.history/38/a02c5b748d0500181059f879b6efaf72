@@ -1,0 +1,12 @@
+package exceptions;
+
+public class ExDemo1 {
+	public static void main(String[] args) {
+		int a  = 20;
+		int b = 45;
+		double d = a/b;
+		
+		System.out.println("No Exception...");
+		System.out.println("Normal Flow Resumed...");
+	}
+}

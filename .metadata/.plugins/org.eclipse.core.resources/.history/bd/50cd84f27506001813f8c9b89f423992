@@ -1,0 +1,20 @@
+package objectserialization;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
+public class ObjectDeserializer {
+
+	public static void main(String[] args) throws IOException, ClassNotFoundException {
+		
+		FileInputStream fis = new FileInputStream("mydata.ser");	
+		ObjectInputStream ois = new ObjectInputStream(fis);
+		
+		User u = (User)ois.readObject();
+		
+		System.out.println(u);
+	}
+
+}

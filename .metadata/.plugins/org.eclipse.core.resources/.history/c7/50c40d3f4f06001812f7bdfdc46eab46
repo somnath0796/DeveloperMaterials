@@ -1,0 +1,16 @@
+package threadsync;
+
+public class Resource {
+
+	synchronized public void print(String message){
+		
+		try {
+			System.out.println("["+message);
+			Thread.sleep(5000);
+			System.out.println("]");
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}

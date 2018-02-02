@@ -1,0 +1,6 @@
+package com.demo.day1;
+
+public abstract class AbsDemo {
+	public abstract void hello();
+	
+}

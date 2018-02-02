@@ -1,0 +1,16 @@
+package threadsync;
+
+public class PrintWorker implements Runnable {
+	
+	private Resource resource;
+	private String message;
+	public PrintWorker() {
+		
+	}
+	@Override
+	public void run() {
+		
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package objectserialization;
+
+import java.io.ObjectOutputStream;
+
+public class SerializerDemo {
+	public static void main(String[] args) throws Exception {
+		
+		ObjectOutputStream ois = new ObjectOutputStream(out);
+	}
+}

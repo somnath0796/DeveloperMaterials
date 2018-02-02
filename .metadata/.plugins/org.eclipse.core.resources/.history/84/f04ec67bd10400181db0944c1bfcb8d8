@@ -1,0 +1,11 @@
+package com.demo.day1;
+
+public class Duck {
+	int duckCount  = 0;
+	
+	public Duck() {
+		duckCount++;
+	}
+	
+	
+}

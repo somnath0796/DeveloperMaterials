@@ -1,0 +1,11 @@
+package exceptions.testthrows.copy;
+
+public class B {
+	public static void f2(){
+		try{
+			C.f3();
+		}catch(Exception e){
+			throw e;
+		}
+	}
+}

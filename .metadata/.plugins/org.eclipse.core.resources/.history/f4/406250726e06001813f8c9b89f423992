@@ -1,0 +1,17 @@
+package objectserialization;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class SerializerDemo {
+	public static void main(String[] args) throws Exception {
+		FileOutputStream fos = new FileOutputStream("mydata.ser");
+		User u = new User("James","London","james@machar.com");
+		extracted(fos).writeObject(u);
+	}
+
+	private static ObjectOutputStream extracted(FileOutputStream fos) throws IOException {
+		return new ObjectOutputStream(fos);
+	}
+}

@@ -1,0 +1,7 @@
+package exceptions.testthrows;
+
+public class A {
+	public static void f1(){
+		B.f2();
+	}
+}

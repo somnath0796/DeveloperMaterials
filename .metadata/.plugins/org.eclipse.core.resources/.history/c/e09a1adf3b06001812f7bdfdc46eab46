@@ -1,0 +1,21 @@
+package threadtest;
+
+public class MainRunner {
+
+	public MainRunner() {
+	}
+
+	public static void main(String[] args) {
+		MyThread t1 = new MyThread("First");
+		MyThread t2 = new MyThread("Second");
+		
+		try {
+			t1.join();
+			t2.join();
+		} catch (InterruptedException e) {			
+			e.printStackTrace();
+		}
+		
+	}
+
+}

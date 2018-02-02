@@ -1,0 +1,13 @@
+package inheritance;
+
+public class inherentMain extends A{
+	public inherentMain() {
+		
+	}
+	
+	public static void main(String[] args) {
+		new A();
+		new B();
+		new C();
+	}
+}

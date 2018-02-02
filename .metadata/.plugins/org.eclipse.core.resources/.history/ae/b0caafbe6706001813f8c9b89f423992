@@ -1,0 +1,33 @@
+package io;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+
+public class FileStreamsDemo2 {
+
+	public static void main(String[] args) {
+		FileReader fis = null;
+		FileWriter fos = null;
+		
+		try(fis  = new FileReader("D:\\workspace\\Day3\\src\\io\\file.txt") || fos = new FileWriter("D:\\workspace\\Day3\\src\\io\\file_copy.txt")){
+			int data = 0;
+			while((data = fis.read()) != -1){
+				System.out.println(data+"--->"+(char)data);
+				fos.write(data);
+			}
+		}catch(IOException e){
+			
+		}catch(FileNotFoundException e){
+			
+		}
+		
+		
+		
+		
+	}
+
+}

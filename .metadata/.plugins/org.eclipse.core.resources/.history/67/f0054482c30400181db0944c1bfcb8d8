@@ -1,0 +1,60 @@
+
+public class Box {
+	private int length;
+	private int breadth;
+	private int height;
+	private String Color;
+	
+	Box(){ }
+	
+	Box(int length, int breadth, int height){
+		this.length = length;
+		this.breadth = breadth;
+		this.height = height;
+	}
+	
+	Box(int length, int breadth, int height, String color){
+		this.length = length;
+		this.breadth = breadth;
+		this.height = height;
+		this.Color = color;
+	}
+	
+	//getters and setters
+	public int getLength() {
+		return length;
+	}
+	
+	public int getBreadth() {
+		return breadth;
+	}
+	
+	public int getHeight() {
+		return height;
+	}
+	
+	public String getColor() {
+		return Color;
+	}
+	
+	public void setLength(int length) {
+		this.length = length;
+	}
+	
+	public void setBreadth(int breadth) {
+		this.breadth = breadth;
+	}
+	
+	public void setHeight(int height) {
+		this.height = height;
+	}
+	
+	public int getVolume(){
+		return length * breadth * height;
+	}
+	
+	public void setColor(String color) {
+		Color = color;
+	}
+}
+

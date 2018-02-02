@@ -1,0 +1,10 @@
+package com.demo.day1;
+
+public abstract class AbsDemo {
+	static String hel = null;
+	public abstract void hello();
+	public String show(){
+		return hel;
+	}
+	
+}

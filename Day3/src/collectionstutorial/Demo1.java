@@ -1,0 +1,27 @@
+package collectionstutorial;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		ArrayList<String> list = new ArrayList<>();
+		list.add("HolaMC");
+		list.add("Gogla");
+		list.add(scan.next());
+		
+		System.out.println(list);
+		HashSet<String> set = new HashSet<>();
+		set.addAll(list);
+		
+		System.out.println(set);
+	}
+
+	
+
+}

@@ -1,0 +1,3 @@
+If data as objects has to be transfered from one heap to another heap over a network(Distributed Computing).
+They cannot be read as Objects. Hence has to be changed to Stream data.
+Hence it is called Serialized. Hence we use RMI(Remote Method Invokation) to make it work.

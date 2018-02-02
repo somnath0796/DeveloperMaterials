@@ -1,0 +1,12 @@
+package com.demo.day1;
+
+public abstract class AbsDemo {
+	static int hel = 0;
+	
+	public abstract void hello();
+	
+	public void show(){
+		System.out.println(hel);
+	}
+	
+}

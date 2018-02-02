@@ -1,0 +1,15 @@
+package threadtest;
+
+public class MainRunner {
+
+	public MainRunner() {
+	}
+
+	public static void main(String[] args) {
+		MyThread t1 = new Thread("First");
+		MyThread t2 = new Thread("Second");
+		
+
+	}
+
+}

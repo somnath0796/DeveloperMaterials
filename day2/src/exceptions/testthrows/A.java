@@ -1,0 +1,11 @@
+package exceptions.testthrows;
+
+public class A {
+	public static void f1(){
+		try{
+			B.f2();
+		}catch(Exception e){
+			throw e;
+		}
+	}
+}

@@ -1,0 +1,5 @@
+package threadsync;
+
+public class Resource {
+
+}

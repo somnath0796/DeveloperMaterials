@@ -1,0 +1,27 @@
+package threadtest;
+
+public class MainRunner {
+
+	public MainRunner() {
+	}
+
+	public static void main(String[] args) {
+		MyThread t1 = new MyThread("First");
+		MyThread t2 = new MyThread("Second");
+		
+		try {
+			Thread k = Thread.currentThread();
+			System.out.println(k.getName()+" : Main waiting... Alive: "+k.isAlive());
+			System.out.println(t1.getName()+" : Alive : "+k.isAlive());
+			t1.join();
+			t2.join();
+			k.join();
+			
+			
+		} catch (InterruptedException e) {			
+			e.printStackTrace();
+		}
+		
+	}
+
+}

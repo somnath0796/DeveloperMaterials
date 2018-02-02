@@ -1,0 +1,12 @@
+package io;
+
+import java.io.IOException;
+
+public class FileStreamsDemo {
+
+	public static void main(String[] args) throws Exception {
+		
+		FileInputStream fis  = new FileInputStream("file.txt");
+	}
+
+}

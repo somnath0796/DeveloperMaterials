@@ -1,0 +1,13 @@
+package inheritance;
+
+public class PersonMain {
+	
+	public static void main(String[] args) {
+		
+		Emp e  = new Emp(100, "Somnath",56000);
+		System.out.println(e.showDetails());
+		
+		Trainee t  = new Trainee(101, "Holande", 20000, "Great");
+		System.out.println(t.showDetails());
+	}
+}
